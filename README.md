@@ -1,4 +1,4 @@
-# 🏥 HealTrack Pakistan: Data-Driven Stratification and Capacity Modeling of National Healthcare Infrastructure
+# HealTrack Pakistan: Data-Driven Stratification and Capacity Modeling of National Healthcare Infrastructure
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![ML Framework](https://img.shields.io/badge/scikit--learn-latest-orange.svg)](https://scikit-learn.org/)
@@ -9,18 +9,18 @@ HealTrack Pakistan is an advanced data science and predictive machine learning p
 
 ---
 
-## 📋 Table of Contents
-* [🏛️ Project Overview & Local Context](#%EF%B8%8F-project-overview--local-context)
-* [📊 Data Pipeline & Feature Architecture](#-data-pipeline--feature-architecture)
-* [⚙️ Methodology & Pipeline Phases](#%EF%B8%8F-methodology--pipeline-phases)
-* [📈 Model Performance & Evaluation](#-model-performance--evaluation)
-* [🚀 Inference Engine & Deployment Tracks](#-inference-engine--deployment-tracks)
-* [🌍 Project Impact Assessment](#-project-impact-assessment)
-* [🛠️ Installation & Usage](#%EF%B8%8F-installation--usage)
+## Table of Contents
+* [Project Overview & Local Context](#%EF%B8%8F-project-overview--local-context)
+* [Data Pipeline & Feature Architecture](#-data-pipeline--feature-architecture)
+* [Methodology & Pipeline Phases](#%EF%B8%8F-methodology--pipeline-phases)
+* [Model Performance & Evaluation](#-model-performance--evaluation)
+* [Inference Engine & Deployment Tracks](#-inference-engine--deployment-tracks)
+* [Project Impact Assessment](#-project-impact-assessment)
+* [Installation & Usage](#%EF%B8%8F-installation--usage)
 
 ---
 
-## 🏛️ Project Overview & Local Context
+## Project Overview & Local Context
 
 Healthcare resource distribution across Pakistan’s 5,500 public and private institutions exhibits deep systemic disparities[cite: 2]. While tier-1 metropolitan cities feature a dense footprint of advanced clinical assets, regional districts and rural facilities frequently face critical shortages of operational beds, specialized personnel, and emergency gear[cite: 2].
 
@@ -28,7 +28,7 @@ Manual auditing of these facility frameworks by provincial health departments is
 
 ---
 
-## 📊 Data Pipeline & Feature Architecture
+## Data Pipeline & Feature Architecture
 
 ### 1. Target Variable Definition
 Because public healthcare registries track facility capacities but rarely include pre-labeled socio-economic stratification tiers, this project mathematically engineers a ground-truth target column: **`Target_Capability_Tier`**[cite: 2].
@@ -47,7 +47,7 @@ The 36 structural predictor features are grouped into four core operational vect
 
 ---
 
-## ⚙️ Methodology & Pipeline Phases
+## Methodology & Pipeline Phases
 
 ### Phase 1: Data Acquisition & Structural Profiling
 * **Source:** Automated cache fetch or fresh query via `kagglehub` from the `algozee/healthcare-accessibility-and-quality-in-pakistan` open-source repository[cite: 2].
@@ -61,7 +61,7 @@ The 36 structural predictor features are grouped into four core operational vect
 To filter out collinear noise, features are subjected to a rigorous normalized dual-scoring evaluation: Information Gain (Mutual Information) and Random Forest Feature Importance (Mean Decreasing Gini)[cite: 2].
 ---
 
-## 📈 Model Performance & Evaluation
+## Model Performance & Evaluation
 
 The processed dataset is partitioned into an `80/20` train-test split, with the training set balanced using synthetic resampling where necessary[cite: 2].
 
@@ -80,17 +80,17 @@ Beyond strict classification, a secondary multi-output regression model forecast
 
 ---
 
-## 🚀 Inference Engine & Deployment Tracks
+## Inference Engine & Deployment Tracks
 
 When a batch of monitored healthcare facilities is fed through the pipeline, the deployment engine automatically segments and parses data across three clinical optimization tracks[cite: 2]:
 
-### 🏥 TRACK 1: INFRASTRUCTURAL KIT DEPLOYMENT
+### TRACK 1: INFRASTRUCTURAL KIT DEPLOYMENT
 * Identifies facilities requiring immediate diagnostic and surgery equipment upgrades based on low `Medical_Equipment_Score` and operational demands[cite: 2].
 
-### 👨‍⚕️ TRACK 2: HUMAN RESOURCE STRAIN REMEDIATION
+### TRACK 2: HUMAN RESOURCE STRAIN REMEDIATION
 * Calculates the exact average doctor staff deficit required to bring under-resourced hospitals back to safe, standard patient-to-staff workload bounds[cite: 2].
 
-### 💰 TRACK 3: FINANCIAL OPTIMIZATION & REVENUE DEPLOYMENT
+### TRACK 3: FINANCIAL OPTIMIZATION & REVENUE DEPLOYMENT
 * Calculates the total recommended budget allocation (PKR) and separates it into area-specific spending recommendations[cite: 2]:
   1. **Physical Infrastructure:** Building expansion, wards, and trauma beds[cite: 2].
   2. **Human Resource Payroll:** Recruitment and retention packages for specialized medical officers[cite: 2].
@@ -98,7 +98,7 @@ When a batch of monitored healthcare facilities is fed through the pipeline, the
 
 ---
 
-## 🌍 Project Impact Assessment
+## Project Impact Assessment
 
 ### 1. Shift from Reactive Auditing to Predictive Stratification
 Currently, provincial healthcare planning in Pakistan relies heavily on periodic manual audits, leading to severe blind spots[cite: 2]. HealTrack Pakistan provides a data-driven model that can run continuously, identifying vulnerable, under-resourced facilities instantly before structural failures or severe healthcare deficits occur[cite: 2].
